@@ -1,0 +1,58 @@
+﻿<Window x:Class="NewLesson.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewLesson"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel Grid.Row="1" Orientation="Vertical">
+            <Label Content="Sign into Football Connect" FontSize="30"  Background="White" Foreground="Blue" HorizontalContentAlignment="Center" />
+            <TextBox 
+                x:Name="usernameTxtB"
+                Width="300"
+                Height="30"
+                FontSize="20"
+                Margin="20"
+                Text="Email"
+                Foreground="Gray"
+                MouseEnter="Username_MouseEnter"
+                
+                ></TextBox>
+            <TextBox
+                x:Name="password"
+                Width="300"
+                Height="30"
+                FontSize="20"
+                Margin="0,0,0,20"
+                Text="Password"
+                Foreground="Gray"
+                MouseEnter=""
+                ></TextBox>
+            <Button
+                Height="20"
+                Width="400"
+                Content="Remmeber me on this device "
+                ></Button>
+            <Button
+                Width="600"
+                Height="50"
+                Background="Blue"
+                Content="Sign In"
+                Foreground="white"
+                FontSize="20"
+                    Margin="5,0,0,10"
+                
+                />
+            <Button Grid.Row="1" Width="400"
+                Height="50"
+                FontSize="20"
+                Foreground="DeepSkyBlue"
+                Content="or Register"
+                >
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Window>
