@@ -52,6 +52,7 @@
                 Content="or Register"
                 >
             </Button>
+            <Label></Label>
         </StackPanel>
 
     </Grid>
